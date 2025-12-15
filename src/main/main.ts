@@ -320,7 +320,7 @@ async function retryOnError(
     fn: () => Promise<void>,
     delay: number,
     maxAttempts: number
-) {
+): Promise<void> {
     let attempts = 0;
 
     while (attempts < maxAttempts) {

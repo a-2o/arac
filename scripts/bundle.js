@@ -2,9 +2,9 @@ import esbuild from 'esbuild';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
 const isProd = process.env.NODE_ENV === "production";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const builds = [
     {

@@ -43,7 +43,6 @@
 export default {
   data() {
     return {
-      showCards: false as boolean,
       cardsState: 'sliding-in-fin' as string,
 
       bench: new Array(10).fill(null) as (Champion | null)[],

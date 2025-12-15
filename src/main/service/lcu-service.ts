@@ -1,7 +1,6 @@
 import axios from 'axios';
 import https from 'https';
 
-// Function to fetch challenge data from local League client
 export async function fetchChallengeData(credentials: LCUCredentials): Promise<number[]> {
     console.log('fetching challenge data...');
     try {

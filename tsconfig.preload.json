@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "strictNullChecks": true,
+        "noUnusedLocals": true,
+        "skipLibCheck": true,
+        "outDir": "build/preload",
+        "module": "ESNext",
+        "target": "ESNext",
+        "moduleResolution": "bundler",
+        "types": [
+            "node",
+            "electron"
+        ]
+    },
+    "include": [
+        "src/preload/**/*.ts",
+        "src/**/*.d.ts"
+    ]
+}

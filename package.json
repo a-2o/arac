@@ -1,0 +1,36 @@
+{
+  "name": "arac",
+  "version": "1.0.0",
+  "description": "arac",
+  "author": "a2o",
+  "type": "module",
+  "main": "dist-electron/main/main.js",
+  "scripts": {
+    "clean": "rimraf build dist dist-electron release",
+    "tsc": "tsc --project tsconfig.main.json && tsc --project tsconfig.preload.json",
+    "vue-tsc": "vue-tsc --project tsconfig.renderer.json --noEmit",
+    "bundle:dev": "npm run tsc && cross-env NODE_ENV=development node scripts/bundle.js",
+    "bundle:prod": "npm run tsc && cross-env NODE_ENV=production node scripts/bundle.js",
+    "package": "npm run clean && npm run bundle:prod && npm run vue-tsc && cross-env NODE_ENV=production vite build && electron-builder",
+    "dev": "npm run clean && npm run bundle:dev && node scripts/dev.js"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.1",
+    "@vitejs/plugin-vue": "^6.0.2",
+    "@vue/tsconfig": "^0.8.1",
+    "cross-env": "^10.1.0",
+    "electron": "^39.2.6",
+    "electron-builder": "^26.0.12",
+    "esbuild": "^0.27.1",
+    "rimraf": "^6.1.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.6",
+    "vue": "^3.5.25",
+    "vue-tsc": "^3.1.6"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "lcu-connector": "^2.1.4",
+    "ws": "^8.18.3"
+  }
+}

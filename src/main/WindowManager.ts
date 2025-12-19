@@ -33,8 +33,7 @@ export class WindowManager {
             return;
         }
 
-        const displays = screen.getAllDisplays();
-        const primaryDisplay = displays[0];
+        const primaryDisplay = screen.getPrimaryDisplay();
         const { x, y, width, height } = primaryDisplay.bounds;
 
         const windowMap: Record<WindowType, [string, number[], Electron.BrowserWindowConstructorOptions]> = {

@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "axios": "^1.13.2",
-    "lcu-connector": "^2.1.4",
+    "lcu-connector": "github:a-2o/lcu-connector",
     "ws": "^8.18.3"
   }
 }

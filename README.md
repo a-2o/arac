@@ -6,9 +6,7 @@
 
 </div>
 
-![cards](/images/doc/cards.png)
-
-![bench](/images/doc/bench.png)
+![champ-select](/images/doc/champ-select.gif)
 
 # How To
 

@@ -1,10 +1,10 @@
-﻿<center>
+<div align="center">
 
 # ARAC
 
 ## Champ-Select Overlay - All Random All Champions (ARAC)
 
-</center>
+</div>
 
 ![cards](/images/doc/cards.png)
 

@@ -10,7 +10,7 @@
 
 # How To
 
-We opted for a minimalistic visual footprint to mostly keep the Overlay out of the User's face whenever it is not exactly relevant:
+I've opted for a minimalistic visual footprint to mostly keep the Overlay out of the User's face whenever it is not exactly relevant:
 
 - The Overlay is **not** visible unless it detects an ongoing **ARAM Champ-Select**.
 - The Overlay does **not** appear in the Taskbar. Instead, look for it in your **System Tray**.
